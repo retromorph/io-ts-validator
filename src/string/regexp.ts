@@ -4,7 +4,7 @@ import { Inverse } from "../base/inverse";
 
 export const Matching =
   (message = "String doesn't match provided regexp") =>
-    (regexp: RegExp) =>
+    (regexp: Readonly<RegExp>) =>
       t.refine<string, string>(
         (i): i is string => (i.match(regexp) ?? []).length != 0,
         message,
@@ -21,7 +21,7 @@ export type NonMatching = t.TypeOf<typeof NonMatching>
 
 export const Contains =
   (message = "String doesn't contain provided regexp") =>
-    (regexp: RegExp) =>
+    (regexp: Readonly<RegExp>) =>
       t.refine<string, string>(
         (i): i is string => regexp.test(i),
         message,

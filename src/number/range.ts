@@ -1,6 +1,5 @@
 import * as t from "io-ts/Codec";
 import { flow } from "fp-ts/function";
-import * as d from "io-ts/Decoder";
 import { Inverse } from "../base/inverse";
 
 export const OpenMin =
