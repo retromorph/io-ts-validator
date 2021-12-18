@@ -9,7 +9,7 @@
   "scripts": {
     "husky:install": "husky install .husky && npx husky add .husky/pre-commit 'yarn fix'",
     "lint": "eslint src/**/*.ts",
-    "fix": "eslint --fix src/**/*.ts",
+    "fix": "eslint src/**/*.ts --fix",
     "clear": "rimraf build",
     "main": "ts-node src/main.ts"
   },

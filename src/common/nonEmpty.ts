@@ -1,5 +1,5 @@
-import * as t from "io-ts/Codec";
 import * as d from "io-ts/Decoder";
+import * as t from "io-ts/Codec";
 import { flow } from "fp-ts/function";
 
 export const isNotEmpty = (val: string): boolean => val.trim() !== "";

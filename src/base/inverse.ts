@@ -1,9 +1,9 @@
-import * as t from "io-ts/Codec";
 import * as E from "fp-ts/Either";
 import * as d from "io-ts/Decoder";
+import * as t from "io-ts/Codec";
 
-export const Inverse =
-  (message: string) =>
+export const  Inverse =
+  (message = "") =>
     <I, O1, A1>(baseCodec: t.Codec<I, O1, A1>) =>
       <O>(codec: t.Codec<I, O, A1>): t.Codec<I, O, A1> => ({
           ...codec,

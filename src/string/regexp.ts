@@ -1,6 +1,6 @@
 import * as t from "io-ts/Codec";
-import { flow } from "fp-ts/function";
 import { Inverse } from "../base/inverse";
+import { flow } from "fp-ts/function";
 
 export const Matching =
   (message = "String doesn't match provided regexp") =>

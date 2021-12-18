@@ -1,7 +1,7 @@
-import * as t from "io-ts/Codec";
-import { pipe } from "fp-ts/function";
 import * as E from "fp-ts/Either";
 import * as d from "io-ts/Decoder";
+import * as t from "io-ts/Codec";
+import { pipe } from "fp-ts/function";
 
 export const Message =
   (message: string) =>
