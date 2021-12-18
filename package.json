@@ -10,7 +10,8 @@
     "husky:install": "husky install .husky && npx husky add .husky/pre-commit 'yarn fix'",
     "lint": "eslint src/**/*.ts",
     "fix": "eslint --fix src/**/*.ts",
-    "clear": "rimraf build"
+    "clear": "rimraf build",
+    "main": "ts-node src/main.ts"
   },
   "dependencies": {
     "fp-ts": "^2.11.5",
